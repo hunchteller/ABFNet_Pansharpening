@@ -1,0 +1,30 @@
+{
+    "name": "ABFNet",
+    "experim_name": "Experiments/QB",
+    "train_batch_size": 8,
+    "val_batch_size": 8,
+    "num_workers": 0,
+    "optimizer": {
+        "type": "ADAM",
+        "args": {
+            "lr": 2e-4,
+            "weight_decay": 0
+        },
+        "step_size": 200,
+        "gamma": 0.5
+    },
+    "trainer": {
+        "total_epochs": 1000,
+        "is_small_patch_train": false,
+        "iter_size": 1,
+        "test_freq": 10
+    },
+    "dataset": {
+        "data_dir": "data/qb/reduced_res",
+        "full_res_dir": "data/qb/full_res",
+        "spectral_bands": 4,
+        "LR_size": 64,
+        "HR_size": 256,
+        "Bit_depth": 11
+    }
+}

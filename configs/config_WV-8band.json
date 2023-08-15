@@ -1,0 +1,30 @@
+{
+    "name": "ABFNet",
+    "experim_name": "Experiments/WV-8band",
+    "train_batch_size": 8,
+    "val_batch_size": 8,
+    "num_workers": 0,
+    "optimizer": {
+        "type": "ADAM",
+        "args": {
+            "lr": 2e-4,
+            "weight_decay": 0
+        },
+        "step_size": 100,
+        "gamma": 0.5
+    },
+    "trainer": {
+        "total_epochs": 500,
+        "is_small_patch_train": false,
+        "iter_size": 1,
+        "test_freq": 5
+    },
+    "dataset": {
+        "data_dir": "data/wv3/reduced_res",
+        "full_res_dir": "data/wv3/full_res",
+        "spectral_bands": 8,
+        "LR_size": 64,
+        "HR_size": 256,
+        "Bit_depth": 11
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "ABFNet",
+    "experim_name": "Experiments/GF2",
+    "train_batch_size": 8,
+    "val_batch_size": 8,
+    "num_workers": 0,
+    "optimizer": {
+        "type": "ADAM",
+        "args": {
+            "lr": 2e-4,
+            "weight_decay": 0
+        },
+        "step_size": 20,
+        "gamma": 0.5
+    },
+    "trainer": {
+        "total_epochs": 100,
+        "is_small_patch_train": false,
+        "iter_size": 1,
+        "test_freq": 1
+    },
+    "dataset": {
+        "data_dir": "data/gf2/reduced_res",
+        "full_res_dir": "data/gf2/full_res",
+        "spectral_bands": 4,
+        "LR_size": 64,
+        "HR_size": 256,
+        "Bit_depth": 10
+    }
+}
