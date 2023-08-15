@@ -22,7 +22,7 @@ IEEE Transactions on Geoscience and Remote Sensing
 python train.py -c configs/config_QB.json 
 ```
 
-*The number of training set should larger than batch size, otherwise the UnboundLocalError: local variable 'loss' referenced before assignment will occurs*  
+*The number of training set should larger than batch size, otherwise the UnboundLocalError: local variable 'loss' referenced before assignment will occur*  
 
 ***
 
