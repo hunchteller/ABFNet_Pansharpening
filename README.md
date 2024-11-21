@@ -34,10 +34,10 @@ python train.py -c configs/config_QB.json
 python test_rr.py -c configs/config_QB.json
 ```
 
-- Test the model on Full Resolution
+<!-- - Test the model on Full Resolution
 ```shell
 python test_fr.py -c configs/config_QB.json
-```
+``` -->
 
 ***
 
